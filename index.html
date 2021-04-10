@@ -152,7 +152,7 @@
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -189,12 +189,21 @@
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        //Ketika tombol submit diklik
-        //Tampilkan tombol loading, hilangkan tombol kirim
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            //tampilkan tombol alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
