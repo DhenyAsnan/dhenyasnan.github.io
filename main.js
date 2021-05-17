@@ -31,7 +31,7 @@ function init() {
 
   facebookBtn.setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdhenyasnan.github.io/gajah.html");
   twitterBtn.setAttribute("href", "https://twitter.com/intent/tweet?via=dhenyasnan&text=Tetap%20Optimis%20di%20Tengah%20Pandemi%20COVID%20-19%20&url=https%3A%2F%2Fdhenyasnan.github.io%2Fgajah.html%2F");
-  whatsappBtn.setAttribute("href", "https://web.whatsapp.com/send?text=Tetap%20Optimis%20di%20Tengah%20Pandemi%20COVID%20-19%20https%3A%2F%2Fdhenyasnan.github.io/gajah.html");
+  whatsappBtn.setAttribute("href", "https://api.whatsapp.com/send?text=Tetap%20Optimis%20di%20Tengah%20Pandemi%20COVID%20-19%20https%3A%2F%2Fdhenyasnan.github.io/gajah.html");
   pinterestBtn.setAttribute("href", "#");
 }
 init();
