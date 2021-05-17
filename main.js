@@ -29,9 +29,9 @@ function init() {
   let postTitle = encodeURI("Hi everyone, plase check this out: ");
   let postImg = encodeURI(pinterestImg.src);
 
-  facebookBtn.setAttribute("href", "https://www.facebook.com/sharer.php?u=${postUrl}");
-  twitterBtn.setAttribute("href", "https://twitter.com/intent/tweet?url=${postUrl}&text=${postTitle}");
-  whatsappBtn.setAttribute("href", "https://api.whatsapp.com/send?text=${postTitle} ${postUrl}");
-  pinterestBtn.setAttribute("href", "https://pinterest.com/pin/create/bookmarklet/?media=${postImg}&url=${postUrl}&description=${postTitle}");
+  facebookBtn.setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdhenyasnan.github.io/gajah.html");
+  twitterBtn.setAttribute("href", "https://twitter.com/intent/tweet?via=dhenyasnan&text=Tetap%20Optimis%20di%20Tengah%20Pandemi%20COVID%20-19%20&url=https%3A%2F%2Fdhenyasnan.github.io%2Fgajah.html%2F");
+  whatsappBtn.setAttribute("href", "https://web.whatsapp.com/send?text=Tetap%20Optimis%20di%20Tengah%20Pandemi%20COVID%20-19%20https%3A%2F%2Fdhenyasnan.github.io/gajah.html");
+  pinterestBtn.setAttribute("href", "#");
 }
 init();
