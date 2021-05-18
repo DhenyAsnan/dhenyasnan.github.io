@@ -15,18 +15,18 @@ https://pinterest.com/pin/create/bookmarklet/?media=[post-img]&url=[post-url]&is
 
 */
 
-const facebookBtn = document.querySelector(".facebook-btn");
-const twitterBtn = document.querySelector(".twitter-btn");
-const whatsappBtn = document.querySelector(".whatsapp-btn");
+// const facebookBtn = document.querySelector(".facebook-btn");
+// const twitterBtn = document.querySelector(".twitter-btn");
+// const whatsappBtn = document.querySelector(".whatsapp-btn");
 
-function init() {
+// function init() {
   // console.log("hello");
 
-  let postUrl = encodeURI(document.location.href);
-  let postTitle = encodeURI("Hi everyone, plase check this out:");
+//   let postUrl = encodeURI(document.location.href);
+//   let postTitle = encodeURI("Hi everyone, plase check this out:");
 
-  facebookBtn.setAttribute("href", "https://www.facebook.com/sharer.php?u=");
-  twitterBtn.setAttribute("href", "https://twitter.com/share?url=");
-  whatsappBtn.setAttribute("href", "https://api.whatsapp.com/send?text=");
-}
-init();
+//   facebookBtn.setAttribute("href", "https://www.facebook.com/sharer.php?u=");
+//   twitterBtn.setAttribute("href", "https://twitter.com/share?url=");
+//   whatsappBtn.setAttribute("href", "https://api.whatsapp.com/send?text=");
+// }
+// init();
