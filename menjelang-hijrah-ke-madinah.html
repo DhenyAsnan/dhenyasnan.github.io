@@ -61,10 +61,6 @@
       <a href="#" class="whatsapp-btn">
         <i class="fab fa-whatsapp"></i>
       </a>
-      </a>
-      <a href="#" class="pinterest-btn">
-        <i class="fab fa-pinterest"></i>
-      </a>
     </div>
     <!-- Akhirtombol share -->
 
@@ -124,33 +120,8 @@
     <!-- https://getbootstrap.com/ | https://getwaves.io/ | https://unsplash.com/ | https://squoosh.app/ | https://www.figma.com/ | https://code.visualstudio.com/ -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyREN9EMMBrjVOeX3bbxPUUHsC2jMsAPhXWQjh1SSf7BRi_Ae2i_ETKPq9kCcFQYoDD/exec";
-      const form = document.forms["dhy-contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+  
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            //tampilkan tombol alert
-            myAlert.classList.toggle("d-none");
-            // reset formnya
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
     <script src="main.js"></script>
   </body>
 </html>
